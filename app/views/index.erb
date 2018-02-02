@@ -9,6 +9,7 @@
     <h1>Recent Posts</h1>
     <% @posts.each do |post| %>
       <h3>Post Title: </h3><%= post.name %>
+      <h3>Post Content: </h3><%= post.content %>
     <% end %>
 
     <% @posts.each do |post| %>
