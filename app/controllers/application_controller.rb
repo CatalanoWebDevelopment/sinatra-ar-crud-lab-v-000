@@ -12,8 +12,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    binding.pry
     @post = Post.new(params)
+    binding.pry
     erb :posts
   end
 
