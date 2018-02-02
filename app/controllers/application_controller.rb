@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
-    erb :index
+    erb :show
   end
 
 end
