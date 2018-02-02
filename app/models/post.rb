@@ -8,4 +8,12 @@ class Post < ActiveRecord::Base
     POSTS << self
   end
 
+  def self.all
+    POSTS
+  end
+
+  def self.clear
+    POSTS.clear
+  end
+
 end
