@@ -49,7 +49,7 @@ class ApplicationController < Sinatra::Base
     @post = Post.find(params[:id])
     @post.delete
 
-    erb :index
+    erb :delete
   end
 
 
