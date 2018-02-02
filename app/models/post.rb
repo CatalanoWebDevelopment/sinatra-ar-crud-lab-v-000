@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   def initialize(name: nil, content: nil)
     @name = name
     @content = content
-
+    POSTS << self
   end
 
 end
