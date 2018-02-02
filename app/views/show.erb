@@ -11,6 +11,7 @@
     <h3>Post Content: </h3><%= @post.content %><br><br>
 
     <form method="POST" action="/posts/<%= @post.id %>/delete">
+      <input type="hidden" id="hidden" name="_method" value="delete">
       <button type="submit" value="delete" name="_method">delete</button>
     </form>
 
