@@ -6,10 +6,10 @@
   </head>
 
   <body>
-    <h1>Current Post: </h2><%= @post.name %>
-    <h1>Current Content: </h2><%= @post.content %>
-
+    
     <form method="POST" action="/posts/<%= @post.id %>">
+      <h1>Current Post: </h1><%= @post.name %>
+      <h1>Current Content: </h1><%= @post.content %>
       <input id="hidden" type="hidden" name="_method" value="patch">
       <h3>New Post Title: </h3><input type="text" name="name">
       <h3>New Post Content: </h3><input type="text" name="content">
