@@ -10,7 +10,7 @@
     <h3>Post Title: </h3><%= @post.name %><br>
     <h3>Post Content: </h3><%= @post.content %><br>
 
-    <form method="POST" action="/posts/:id/delete">
+    <form method="POST" action="/posts/<%= @post.id %>/delete">
 
     </form>
 
