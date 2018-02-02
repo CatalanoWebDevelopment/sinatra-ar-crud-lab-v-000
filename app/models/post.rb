@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
 
   def initialize
   end
+  
 end
