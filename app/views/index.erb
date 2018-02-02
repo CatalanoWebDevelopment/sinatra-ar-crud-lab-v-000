@@ -9,7 +9,8 @@
     <h1>Your Blog Post!</h1>
     <h3>Post Title: </h3><% @posts.each do |post| %>
       <%= post.name %><% end %>
-    <h3>Post Content: </h3><% @posts.each do |post| %><br>
+    <h3>Post Content: </h3><% @posts.each do |post| %>
+      <%= post.content %><% end %>
 
   </body>
 </html>
