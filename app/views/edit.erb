@@ -7,7 +7,9 @@
 
   <body>
     <form method="POST" action="/posts/<%= @post.id %>">
-      
+      <input id="hidden" type="hidden" name="_method" value="patch">
+      <h3>New Post Title: </h3><input type="text" name="name">
+
     </form>
   </body>
 </html>
