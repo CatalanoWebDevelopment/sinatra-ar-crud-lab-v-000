@@ -6,11 +6,8 @@
   </head>
 
   <body>
-    <h1>Recent Posts</h1>
-    <% @posts.each_with_index do |post, index| %>
-      <h3><%= index + 1 %>. Post Title: </h3><%= post.name %>
-      <h3>Post Content: </h3><%= post.content %>
-    <% end %>
+
+    <p><%= @post.name %> was deleted</p>
 
   </body>
 </html>
