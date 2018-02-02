@@ -7,7 +7,7 @@
 
   <body>
     <h1>Your Blog Post!</h1>
-    <h3>Post Title: </h3><%= @posts.name %><br>
+    <h3>Post Title: </h3><% @posts.each do |post| %><br>
     <h3>Post Content: </h3><%= @posts.content %><br>
 
   </body>
