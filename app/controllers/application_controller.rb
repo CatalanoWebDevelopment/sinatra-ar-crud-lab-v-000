@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     @post = Post.create(params)
-
+binding.pry
     erb :index
   end
 
