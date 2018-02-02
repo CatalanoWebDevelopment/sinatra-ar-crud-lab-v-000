@@ -8,11 +8,9 @@
   <body>
 
     <form method="POST" action="/posts/<%= @post.id %>">
-      <h1>Current Post: </h1><%= @post.name %>
-      <h1>Current Content: </h1><%= @post.content %>
       <input id="hidden" type="hidden" name="_method" value="patch">
       <h3>New Post Title: </h3><input type="text" name="name" value="<%= @post.name %>">
-      <h3>New Post Content: </h3><input type="text" name="content">
+      <h3>New Post Content: </h3><input type="text" name="content" value="<%= @post.content %>">
 
       <button type="submit" name="submit">submit</button>
     </form>
