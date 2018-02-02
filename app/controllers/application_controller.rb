@@ -18,7 +18,7 @@ binding.pry
   end
 
   get '/posts' do
-    erb :show 
+    erb :show
   end
 
 end
