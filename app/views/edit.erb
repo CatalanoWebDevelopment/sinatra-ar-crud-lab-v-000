@@ -8,7 +8,7 @@
   <body>
     <h1>Current Post: </h2><%= @post.name %>
     <h1>Current Content: </h2><%= @post.content %>
-    
+
     <form method="POST" action="/posts/<%= @post.id %>">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <h3>New Post Title: </h3><input type="text" name="name">
