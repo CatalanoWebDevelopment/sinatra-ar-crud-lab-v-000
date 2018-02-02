@@ -8,7 +8,7 @@
   <body>
     <h1>Your Blog Post!</h1>
     <h3>Post Title: </h3><%= @post.name %><br>
-    <h3>Post Content: </h3><%= @post.content %><br>
+    <h3>Post Content: </h3><%= @post.content %><br><br>
 
     <form method="POST" action="/posts/<%= @post.id %>/delete">
       <button type="submit" value="delete" name="_method">delete</button>
