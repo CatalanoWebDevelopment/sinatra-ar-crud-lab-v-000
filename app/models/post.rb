@@ -1,10 +1,11 @@
 class Post < ActiveRecord::Base
   attr_accessor :name, :content
-  @@all
+  POSTS = []
 
   def initialize(name: nil, content: nil)
     @name = name
     @content = content
+
   end
 
 end
