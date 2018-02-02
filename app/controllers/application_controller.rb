@@ -17,4 +17,8 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/posts' do
+
+  end
+
 end
